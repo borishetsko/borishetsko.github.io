@@ -1,0 +1,355 @@
+/** {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700,900');
+
+body {
+	font-family: 'Roboto', sans-serif!important;
+}
+
+/***********************************************/
+.slider {
+	background-image: url(../img/slider.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-color: #ccc;
+	min-height: 100vh;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.slider>.container {
+	max-width: 1100px;
+	width: 100%;
+	margin: auto;
+	padding: 0 15px;
+}
+.slider h1 {
+	font-size: 60px;
+	//display: inline-block;
+	padding: 20px 0;
+	color: #fff;
+	text-transform: uppercase;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	font-weight: 600;
+}
+.slider button {
+	//display: inline-block;
+	color: #fff;
+	border: 2px solid #fff;
+	padding: 15px 35px;
+	background: transparent;
+	text-transform: uppercase;
+	margin-top: 50px;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+
+
+/*********************************************************/
+.menu {
+	background: #252e30;
+}
+.menu .container {
+	text-align: justify;
+	vertical-align: middle;
+	font-size: 0;
+	line-height: 0;
+	padding: 15px;
+}
+.menu .logo img {
+	vertical-align: bottom;
+}
+.menu .logo,
+.menu .menu-box {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 16px;
+	line-height: 20px;
+}
+.menu ul {
+	margin: 0;
+}
+.menu li {
+	list-style: none;
+	display: inline-block;
+	padding: 0 10px;
+}
+.menu li a {
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 600;
+}
+.menu li a:hover {
+	color: #2ecc71;
+}
+.helper {
+	display: inline-block;
+	width: 100%;
+	font-size: 0;
+	line-height: 0;
+}
+
+
+
+/********************************************/
+.three .container {
+	padding: 80px 15px;
+}
+.three ul li {
+	text-align: justify;
+	padding: 0 25px;
+}
+.three ul li h4 {
+	color: #566366;
+	font-size: 25px;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+.three ul li p {
+	color: #919191;
+	font-size: 18px;
+}
+
+
+
+/********************************/
+.about-me {
+	background-image: url(../img/about_me.png);
+	background-color: #f2f2f1;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.about-me .container {
+	padding: 90px 15px;
+}
+.about-me h3 {
+	color: #566366;
+	font-size: 25px;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 30px;
+	font-weight: 600;
+}
+.about-me p {
+	color: #919191;
+    font-size: 18px;
+}
+.about-me .list-items {
+	margin-top: 70px;
+}
+.about-me .list-items h5 {
+	font-size: 21px;
+	color: #566366;
+	margin-bottom: 20px;
+	font-weight: 600;
+	position: relative;
+	text-transform: uppercase;
+}
+.about-me .ab-item {
+	padding-left: 65px;
+	margin-bottom: 50px;
+}
+.about-me .ab-item:before {
+	content: '';
+	position: absolute;
+	top: 15px;
+	left: 0;
+	width: 41px;
+	height: 41px;
+	background: url(../img/web-des-ic.png) center no-repeat;
+}
+
+
+
+/******************************/
+.resume {
+	background: #f2f2f1;
+	position: relative;
+}
+.resume:after {
+	content: '';
+	display: inline-block;
+	width: 0;
+	height: 0;
+	position: absolute;
+	bottom: -80px;
+	left: calc(50% - 40px);
+	border-top: 40px solid #f2f2f1;
+	border-bottom: 40px solid transparent;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+}
+.resume .container {
+	padding: 30px 15px 50px 15px;
+}
+.resume h3 {
+	color: #566366;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.resume p {
+	color: #919191;
+    font-size: 18px;
+	text-align: center;
+	padding: 0 50px;
+	margin: 50px 0;
+}
+.resume button {
+	color: #2ecc71;
+	border: 2px solid #2ecc71;
+	background: transparent;
+	padding: 20px;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+
+
+/*****************************************/
+.reviews {
+	background: #f2f2f1;
+}
+.reviews .container {
+	padding: 50px 15px;
+}
+.reviews h4 {
+	text-transform: uppercase;
+	margin: 30px 0;
+	color: #566366;
+	font-weight: 600;
+}
+.reviews p {
+	color: #566366;
+	font-size: 16px;
+	line-height: 30px;
+}
+
+
+
+/**********************************************/
+.portfolio .container {
+	padding: 100px 15px;
+}
+.portfolio h3 {
+	color: #566366;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.portfolio p {
+	margin-bottom: 50px;
+	padding: 0 100px;
+	color: #919191;
+    font-size: 16px;
+    line-height: 30px;
+}
+.portfolio li {
+	padding: 15px;
+}
+.portfolio li:hover img {
+	transform: scale(1.05);
+	transition: all 0.5s;
+	box-shadow: 0 0 30px #252e30;
+}
+
+
+
+/**********************************************/
+.contact {
+	background: #252e30;
+}
+.contact .container {
+	padding: 130px 15px 150px 15px;
+}
+.contact .cont_txt {
+	padding: 0 30px 0 5px; 
+}
+.contact .cont_form {
+	padding: 0 5px 0 30px;
+}
+.contact .cont_txt h3 {
+	color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.contact .cont_txt p {
+	color: #919191;
+    font-size: 18px;
+    text-align: justify;
+}
+.contact .cont_form {
+	padding-top: 50px;
+}
+.contact .cont_form label {
+	display: block;
+	width: 100%;
+	font-size: 16px;
+	color: #fff;
+	margin-bottom: 30px;
+}
+.contact .cont_form textarea,
+.contact .cont_form input {
+	display: block;
+	font-size: 16px;
+	color: #fff;
+	width: 100%;
+	line-height: 55px;
+	padding: 0 5px;
+	background: #4b5456;
+	border: none;
+}
+.contact .cont_form #sub_btn {
+	color: #fff;
+    line-height: 55px;
+    font-size: 18px;
+    text-transform: uppercase;
+    width: 40%;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    display: inline-block;
+    border: none;
+    background: #191f21;
+}
+
+
+
+/**********************************************/
+.footer {
+	background: #191f21;
+}
+.footer .container {
+	padding: 30px 15px;
+}
+.footer ul {
+	margin: 0;
+}
+.footer p {
+	color: #4b5456;
+	font-size: 14px;
+}
+.footer li .fab {
+	font-size: 35px;
+	color: #4b5456;
+}
+.footer li:hover .fab {
+	color: #fff;
+	transition: all 0.5s;
+}
