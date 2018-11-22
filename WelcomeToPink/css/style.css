@@ -15,10 +15,11 @@ body {
 	color: #736e6e;
 	font-size: 18px;
 	font-weight: 500;
+	transition: all 0.25s;
 }
 .menu li a:hover,
 .menu li a:active {
-	text-decoration: underline;
+	color: #000;
 }
 .menu .login a {
 	background: #de6d6e;
@@ -97,6 +98,28 @@ body {
 .tips li:nth-child(4) .tips-wr {
 	background: #e48f23;
 }
+.tips li span {
+	display: none;
+	max-width: 150px;
+	font-size: 15px;
+	color: #fff;
+	max-height: 180px;
+	overflow: hidden;
+}
+.tips li:hover .tips-wr {
+	transform: scale(1.1);
+	transition: all 0.4s;
+	cursor: pointer;
+}
+.tips li:hover .tips-wr img,
+.tips li:hover .tips-wr p {
+	display: none;
+}
+.tips li:hover span {
+	display: block;
+	transition: all 0.5s;
+}
+
 /*******************news*******************/
 .news {
 	background: #fff;
@@ -127,12 +150,16 @@ body {
 }
 .footer .sub-menu-box a {
 	color: #8b8b8b;
+	transition: all 0.25s;
+	text-decoration: none;
 }
 .footer .sub-menu-box a:hover {
 	color: #fff;
 }
 .footer .social li a {
 	color: #292d22;
+	transition: all 0.25s;
+	padding: 20px 0;
 }
 .footer .social .fab {
 	display: inline-block;
@@ -144,9 +171,6 @@ body {
 }
 .footer .social li a:hover {
 	color: #fff;
-}
-.footer .social li a {
-	padding: 20px 0;
 }
 .footer .copyright {
 	padding-top: 30px;
