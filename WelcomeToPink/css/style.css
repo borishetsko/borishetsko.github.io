@@ -63,7 +63,6 @@ body {
 	padding: 30px;
 }
 .tips ul li .tips-wr {
-	background: green;
 	border-radius: 50%;
 }
 .tips h2 {
@@ -71,6 +70,32 @@ body {
 }
 .tips p {
 	color: #636363;
+}
+.tips li .tips-wr {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: 185px;
+	width: 185px;
+	max-width: 185px;
+	margin: auto;
+}
+.tips li p {
+	color: #fff;
+	margin: 10px 0 0 0;
+}
+.tips li:nth-child(1) .tips-wr {
+	background: #4eb9f4;
+}
+.tips li:nth-child(2) .tips-wr {
+	background: #6fc125;
+}
+.tips li:nth-child(3) .tips-wr {
+	background: #ff5649;
+}
+.tips li:nth-child(4) .tips-wr {
+	background: #e48f23;
 }
 /*******************news*******************/
 .news {
