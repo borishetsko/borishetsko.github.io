@@ -3,16 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Web & Graphic Designer</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-
-
 </head>
 <body>
-
+	<div id="top"></div>
+	<a href="#top" class="back-to-top">
+		<i class="fas fa-arrow-up"></i>
+	</a>
 	<div class="slider">
 		<div class="container">
 			<div class="slider-text">
@@ -21,77 +24,78 @@
 			</div>
 		</div>
 	</div>
-
 	<div class="menu">
 		<div class="container">
 			<div class="logo">
 				<a href="#"><img src="img/logo.png" alt="logo"></a>
 			</div>
 			<div class="menu-box">
-				<ul class="list-unstyled">
-					<li><a href="#">Lorem</a></li>
-					<li><a href="#">Lorem</a></li>
-					<li><a href="#">Lorem</a></li>
-					<li><a href="#">Lorem</a></li>
-					<li><a href="#">Lorem</a></li>
-					<li><a href="#">Lorem</a></li>
-					<li><a href="#">Lorem</a></li>
+				<ul class="main-nav list-unstyled">
+					<li><a href="#about-me">About Me</a></li>
+					<li><a href="#slills">Skills</a></li>
+					<li><a href="#resume">Resume</a></li>
+					<li><a href="#">Testimonials</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact Me</a></li>
 				</ul>
 			</div>
 			<div class="helper"></div>
 		</div>
 	</div>
-
 	<div class="three">
 		<div class="container">
 			<ul class="list-unstyled">
 				<li class="col-md-4">
 					<h4>VALUES</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, corporis facilis obcaecati consequuntur odio mollitia fugiat.</p>
+					<p class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, corporis facilis obcaecati consequuntur odio mollitia fugiat.</p>
 				</li>
 				<li class="col-md-4">
 					<h4>GOALS</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, corporis facilis obcaecati consequuntur odio mollitia fugiat.</p>
+					<p class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, corporis facilis obcaecati consequuntur odio mollitia fugiat.</p>
 				</li>
 				<li class="col-md-4">
 					<h4>HOBBIES</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, corporis facilis obcaecati consequuntur odio mollitia fugiat.</p>
+					<p class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, corporis facilis obcaecati consequuntur odio mollitia fugiat.</p>
 				</li>
 				<li></li>
 			</ul>
 		</div>
 	</div>
-
-	<div class="about-me">
+	<div class="about-me" id="about-me">
 		<div class="container">
 			<div class="col-md-7 col-md-offset-5">
-				<h3>ABOUT ME</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias pariatur perferendis quasi temporibus, nesciunt iure tenetur praesentium recusandae veniam expedita atque unde sequi veritatis illo, consequuntur perspiciatis minima. Consectetur, dignissimos!</p>
-				<p>Molestias pariatur perferendis quasi temporibus, nesciunt iure tenetur praesentium recusandae veniam expedita atque unde sequi veritatis illo, consequuntur perspiciatis minima.</p>
+				<h3 class="section-header">ABOUT ME</h3>
+				<div class="row">
+					<div class="me-img-box col-sm-3">
+						<img src="img/me.png" alt="me" class="me-small img-responsive">
+					</div>
+					<div class="me-txt-box col-sm-9 col-md-12">
+						<p class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias pariatur perferendis quasi temporibus, nesciunt iure tenetur praesentium recusandae veniam expedita atque unde sequi veritatis illo, consequuntur perspiciatis minima. Consectetur, dignissimos!</p>
+						<p class="main-text">Molestias pariatur perferendis quasi temporibus, nesciunt iure tenetur praesentium recusandae veniam expedita atque unde sequi veritatis illo, consequuntur perspiciatis minima.</p>
+					</div>
+				</div>
 				<div class="list-items row">
 					<div class="ab-item col-sm-6">
 						<h5>Web Design</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						<p class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 					</div>
 					<div class="ab-item col-sm-6">
 						<h5>Graphic Design</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						<p class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 					</div>
 					<div class="ab-item col-sm-6">
 						<h5>Online Marketing</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						<p class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 					</div>
 					<div class="ab-item col-sm-6">
 						<h5>SEO</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						<p class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 					</div>
 				</div>
 			</div>
-			
 		</div>
 	</div>
-	
-	<div class="skills">
+	<div class="skills" id="skills">
 		<div class="container">
 			<div class="col-md-6">
 				
@@ -101,68 +105,86 @@
 			</div>
 		</div>
 	</div>
-
-	<div class="resume">
+	<div class="resume" id="resume">
 		<div class="container text-center">
-			<h3>RESUME</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit officiis excepturi omnis repellendus nemo culpa eveniet earum alias inventore magnam hic quasi dolorum sequi doloremque minus nihil, ut, ipsa veniam.</p>
+			<h3 class="section-header text-center">RESUME</h3>
+			<p class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit officiis excepturi omnis repellendus nemo culpa eveniet earum alias inventore magnam hic quasi dolorum sequi doloremque minus nihil, ut, ipsa veniam.</p>
 			<button>Download resume</button>
 		</div>
 	</div>
-	
-	<div class="reviews">
+	<div class="reviews" id="reviews">
 		<div class="container">
-			<div class="col-sm-8 col-sm-offset-2">
-				<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laborum cum, vero rem repudiandae, hic beatae ad minima dicta eos animi vitae excepturi, ratione id distinctio sapiente nulla! Eveniet, maiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-				<h4 class="text-center">JOHN STONE</h4>
+			<div class="col-sm-10 col-sm-offset-1">
+				<ul class="list-unstyled slows">
+					<li>
+						<p class="text-center">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laborum cum, vero rem repudiandae, hic beatae ad minima dicta eos animi vitae excepturi, ratione id distinctio sapiente nulla! Eveniet, maiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit."</p>
+						<h4 class="text-center">JOHN STONE</h4>
+					</li>
+					<li>
+						<p class="text-center">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laborum cum, vero rem repudiandae, hic beatae ad minima dicta eos animi vitae excepturi, ratione id distinctio sapiente nulla! Eveniet, maiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit."</p>
+						<h4 class="text-center">JOHN STONE</h4>
+					</li>
+					<li>
+						<p class="text-center">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laborum cum, vero rem repudiandae, hic beatae ad minima dicta eos animi vitae excepturi, ratione id distinctio sapiente nulla! Eveniet, maiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit."</p>
+						<h4 class="text-center">JOHN STONE</h4>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>
-	
-	<div class="portfolio">
+	<div class="portfolio" id="portfolio">
 		<div class="container">
-			<h3 class="text-center">PORTFOLIO</h3>
-			<p class="text-center">Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri. </p>
+			<h3 class="section-header text-center">PORTFOLIO</h3>
+			<p class="main-text text-center">Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri. </p>
 			<ul class="list-unstyled">
-				<li class="col-sm-4">
+				<li class="col-sm-6 col-md-4">
 					<img src="./img/prt1.png" alt="1" class="img-responsive center-block">
 				</li>
-				<li class="col-sm-4">
+				<li class="col-sm-6 col-md-4">
 					<img src="./img/prt2.png" alt="2" class="img-responsive center-block">
 				</li>
-				<li class="col-sm-4">
+				<li class="col-sm-6 col-md-4">
 					<img src="./img/prt3.png" alt="3" class="img-responsive center-block">
 				</li>
-				<li class="col-sm-4">
+				<li class="col-sm-6 col-md-4">
 					<img src="./img/prt4.png" alt="4" class="img-responsive center-block">
 				</li>
-				<li class="col-sm-4">
+				<li class="col-sm-6 col-md-4">
 					<img src="./img/prt5.png" alt="5" class="img-responsive center-block">
 				</li>
-				<li class="col-sm-4">
+				<li class="col-sm-6 col-md-4">
 					<img src="./img/prt1.png" alt="6" class="img-responsive center-block">
 				</li>
-				<li class="col-sm-4">
+				<li class="col-sm-6 col-md-4">
 					<img src="./img/prt2.png" alt="7" class="img-responsive center-block">
 				</li>
-				<li class="col-sm-4">
+				<li class="col-sm-6 col-md-4">
 					<img src="./img/prt3.png" alt="8" class="img-responsive center-block">
 				</li>
-				<li class="col-sm-4">
+				<li class="col-sm-6 col-md-4">
 					<img src="./img/prt4.png" alt="9" class="img-responsive center-block">
 				</li>
 			</ul>
 		</div>
 	</div>
-	
-	<div class="contact">
+	<div class="contact" id="contact">
 		<div class="container">
-			<div class="col-sm-6 cont_txt">
-				<h3>CONTACT ME</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nulla saepe corporis alias, eveniet reprehenderit esse laboriosam. Tempora delectus, deserunt ratione error quam repellendus esse culpa, laboriosam natus excepturi inventore.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias natus fugit, nemo dolores sequi placeat atque vel ratione hic! Animi, temporibus fuga similique placeat, sapiente deleniti expedita recusandae. Voluptas, illo!</p>
+			<div class="col-md-6 cont_txt">
+				<h3 class="section-header">CONTACT ME</h3>
+				<p class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nulla saepe corporis alias, eveniet reprehenderit esse laboriosam. Tempora delectus, deserunt ratione error quam repellendus esse culpa, laboriosam natus excepturi inventore.</p>
+				<ul class="adress list-unstyled">
+					<li><p class="main-text">122 33rd Street East</p></li>
+					<li><p class="main-text">Saskatoon, SK</p></li>
+					<li><p class="main-text">S7K 1R9</p></li>
+				</ul>
+				<div class="email">
+					<p class="main-text"><strong>Email: </strong><a href="mailto:info@local.com">info@local.com</a></p>
+				</div>
+				<div class="phone">
+					<p class="main-text"><strong>Phone: </strong><a href="tel:000-000-000-000">000-000-000-000</a></p>
+				</div>
 			</div>
-			<div class="col-sm-6 cont_form">
+			<div class="col-md-6 cont_form">
 				<form action="#">
 					<label for="name">Name: *
 						<input type="text" id="name">
@@ -171,29 +193,31 @@
 						<input type="text" id="email">
 					</label>
 					<label for="message">Message: *
-						<textarea name="message" id="message"></textarea>
+						<textarea name="message" rows="7" id="message"></textarea>
 					</label>
 					<input type="submit" id="sub_btn">
 				</form>
 			</div>
 		</div>
 	</div>
-	
 	<div class="footer">
 		<div class="container">
 			<p class="text-center">Copyright 2014 Focal - Built With Passion</p>
 			<ul class="social list-unstyled list-inline text-center">
-				<li><i class="fab fa-facebook-square"></i></li>
-				<li><i class="fab fa-google-plus-square"></i></li>
-				<li><i class="fab fa-twitter-square"></i></li>
-				<li><i class="fab fa-cc-visa"></i></li>
-				<li><i class="fab fa-cc-paypal"></i></li>
+				<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+				<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+				<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+				<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
 			</ul>
 		</div>
 	</div>
-
 <!-- JavaScript -->
-<script src="js/bootstrap.min.js"></script>
-
+<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<!-- <script type="text/javascript" src="js/npm.js"></script> -->
+<script type="text/javascript" src="js/slick.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/template.js"></script>
 </body>
 </html>

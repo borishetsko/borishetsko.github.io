@@ -1,12 +1,35 @@
-/** {
-	margin: 0;
-	padding: 0;
-	font-family: 'Roboto', sans-serif;
-}*/
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700,900');
 
 body {
 	font-family: 'Roboto', sans-serif!important;
+}
+.back-to-top {
+	position: fixed;
+	bottom: 30px;
+	right: 35px;
+}
+.fa-arrow-up:before {
+    background: #00000094;
+    color: #ffffff80;
+    font-size: 20px;
+    width: 45px;
+    line-height: 45px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+}
+.section-header {
+	margin: 0 0 40px 0;
+	color: #566366;
+	text-transform: uppercase;
+	font-size: 25px;
+	font-weight: 600;
+}
+.main-text {
+	color: #919191;
+	margin: 0;
+	line-height: 28px;
+	font-size: 17px;
 }
 
 /***********************************************/
@@ -26,11 +49,10 @@ body {
 	max-width: 1100px;
 	width: 100%;
 	margin: auto;
-	padding: 0 15px;
+	padding: 0 30px;
 }
 .slider h1 {
 	font-size: 60px;
-	//display: inline-block;
 	padding: 20px 0;
 	color: #fff;
 	text-transform: uppercase;
@@ -39,7 +61,6 @@ body {
 	font-weight: 600;
 }
 .slider button {
-	//display: inline-block;
 	color: #fff;
 	border: 2px solid #fff;
 	padding: 15px 35px;
@@ -79,13 +100,13 @@ body {
 .menu li {
 	list-style: none;
 	display: inline-block;
-	padding: 0 10px;
+	padding: 0 15px;
 }
 .menu li a {
 	text-decoration: none;
 	color: #fff;
 	text-transform: uppercase;
-	font-size: 16px;
+	font-size: 17px;
 	font-weight: 600;
 }
 .menu li a:hover {
@@ -134,17 +155,10 @@ body {
 .about-me .container {
 	padding: 90px 15px;
 }
-.about-me h3 {
-	color: #566366;
-	font-size: 25px;
-	text-transform: uppercase;
-	margin-top: 0;
-	margin-bottom: 30px;
-	font-weight: 600;
-}
 .about-me p {
 	color: #919191;
     font-size: 18px;
+    text-align: justify;
 }
 .about-me .list-items {
 	margin-top: 70px;
@@ -168,8 +182,24 @@ body {
 	left: 0;
 	width: 41px;
 	height: 41px;
-	background: url(../img/web-des-ic.png) center no-repeat;
 }
+.about-me .ab-item:nth-child(1):before {
+	background: url(../img/gr-des-ic.png) center no-repeat;
+}
+.about-me .ab-item:nth-child(2):before {
+	background: url(../img/gr-des-ic.png) center no-repeat;
+}
+.about-me .ab-item:nth-child(3):before {
+	background: url(../img/on-mar-ic.png) center no-repeat;
+}
+.about-me .ab-item:nth-child(4):before {
+	background: url(../img/seo-ic.png) center no-repeat;
+}
+
+
+
+
+
 
 
 
@@ -192,13 +222,7 @@ body {
 	border-right: 40px solid transparent;
 }
 .resume .container {
-	padding: 30px 15px 50px 15px;
-}
-.resume h3 {
-	color: #566366;
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: 600;
+	padding: 50px 15px;
 }
 .resume p {
 	color: #919191;
@@ -233,9 +257,10 @@ body {
 	font-weight: 600;
 }
 .reviews p {
-	color: #566366;
-	font-size: 16px;
+	color: #919191;
+	font-size: 18px;
 	line-height: 30px;
+	font-style: italic;
 }
 
 
@@ -250,6 +275,7 @@ body {
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 40px;
+    margin-top: 0;
 }
 .portfolio p {
 	margin-bottom: 50px;
@@ -274,7 +300,7 @@ body {
 	background: #252e30;
 }
 .contact .container {
-	padding: 130px 15px 150px 15px;
+	padding: 110px 15px 110px 15px;
 }
 .contact .cont_txt {
 	padding: 0 30px 0 5px; 
@@ -284,15 +310,22 @@ body {
 }
 .contact .cont_txt h3 {
 	color: #fff;
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin-bottom: 40px;
 }
 .contact .cont_txt p {
-	color: #919191;
-    font-size: 18px;
     text-align: justify;
+}
+.contact .cont_txt a {
+	color: #919191;
+}
+.contact .cont_txt .adress {
+	margin: 25px 0;
+}
+.contact .cont_txt .adress li p {
+	margin: 0;
+}
+.contact .cont_txt strong {
+	color: #fff;
+	margin-right: 10px;
 }
 .contact .cont_form {
 	padding-top: 50px;
@@ -304,20 +337,29 @@ body {
 	color: #fff;
 	margin-bottom: 30px;
 }
-.contact .cont_form textarea,
 .contact .cont_form input {
 	display: block;
-	font-size: 16px;
-	color: #fff;
-	width: 100%;
-	line-height: 55px;
-	padding: 0 5px;
-	background: #4b5456;
-	border: none;
+    font-size: 16px;
+    color: #fff;
+    width: 100%;
+    line-height: 30px;
+    padding: 10px;
+    background: #4b5456;
+    border: none;
+}
+.contact .cont_form textarea {
+	display: block;
+    font-size: 16px;
+    color: #fff;
+    width: 100%;
+    line-height: 30px;
+    padding: 10px;
+    background: #4b5456;
+    border: none;
 }
 .contact .cont_form #sub_btn {
 	color: #fff;
-    line-height: 55px;
+    line-height: 50px;
     font-size: 18px;
     text-transform: uppercase;
     width: 40%;
@@ -327,6 +369,11 @@ body {
     display: inline-block;
     border: none;
     background: #191f21;
+    transition: all 0.3s ease-in;
+}
+.contact .cont_form #sub_btn:hover {
+	color: #191f21;
+	background: #fff;
 }
 
 
@@ -344,12 +391,63 @@ body {
 .footer p {
 	color: #4b5456;
 	font-size: 14px;
+	text-transform: uppercase;
+	margin-bottom: 25px;
 }
 .footer li .fab {
-	font-size: 35px;
-	color: #4b5456;
+	font-size: 20px;
+    color: #191f21;
+    background: #4b5456;
+    line-height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in;
 }
 .footer li:hover .fab {
 	color: #fff;
-	transition: all 0.5s;
+}
+.about-me .me-img-box {
+	display: none;
+	padding-left: 0;
+}
+
+@media(max-width: 992px) {
+
+	.about-me {
+		background: #f2f2f1;
+	}
+	.about-me .section-header {
+		text-align: center;
+	}
+	.about-me .me-img-box {
+		display: block;
+	}
+	.about-me .list-items {
+		margin-top: 25px;
+	}
+	.about-me .me-txt-box {
+		margin-bottom: 30px;
+	}
+	.three ul li h4 {
+		margin: 25px 0 0 0;
+	}
+	.slider>.container {
+		padding: 30px 80px;
+	}
+	.three .container,
+	.about-me .container,
+	.skills .container,
+	.resume .container,
+	.reviews .container,
+	.portfolio .container,
+	.contact .container {
+		padding: 30px 10px;
+	}
+	.contact .cont_txt {
+	    padding: 0;
+	}
+	.contact .cont_form {
+	    padding: 50px 0 0 0;
+	}
+
 }
