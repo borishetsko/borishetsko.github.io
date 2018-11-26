@@ -10,12 +10,8 @@
 		  	speed: 3000,
 		  	slidesToShow: 1,
 		  	slidesToScroll: 1,
-		});
-		// $("body").on("click", ".menu li a", function() {
-		// 	var idtop = $($(this).attr("href")).offset().top;
-		// 	$('html,body').animate({scrollTop: idtop}, 900);
-		// 	return false;
-		// });
+	});
+
 	// (function($){
 	// $(document).ready(function(){
 	// 	$('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
@@ -25,17 +21,12 @@
 	// 		$(this).parent().toggleClass('open');
 	// 	});
 	// });
-// })(jQuery);
+	// })(jQuery);
 
-	$(".menu-box").on("click",".main-nav li a", function (event) {
-		//отменяем стандартную обработку нажатия по ссылке
-		event.preventDefault();
-		//забираем идентификатор бока с атрибута href
-		var id  = $(this).attr('href'),
-		//узнаем высоту от начала страницы до блока на который ссылается якорь
-			top = $(id).offset().top;
-		//анимируем переход на расстояние - top за 1500 мс
-		$('body,html').animate({scrollTop: top}, 2000);
+	$("body").on("click", ".to-top a, .main-nav li a", function() {
+		var idtop = $($(this).attr("href")).offset().top;
+		$('html,body').animate({scrollTop: idtop}, 1500);
+		return false;
 	});
 
 	})
