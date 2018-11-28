@@ -7,6 +7,7 @@ body {
 	position: fixed;
 	bottom: 30px;
 	right: 35px;
+	z-index: 10;
 }
 .fa-arrow-up:before {
     background: #00000094;
@@ -60,7 +61,8 @@ body {
 	border-bottom: 2px solid #fff;
 	font-weight: 600;
 }
-.slider button {
+.slider a {
+	display: inline-block;
 	color: #fff;
 	border: 2px solid #fff;
 	padding: 15px 35px;
@@ -69,6 +71,12 @@ body {
 	margin-top: 50px;
 	font-size: 18px;
 	cursor: pointer;
+}
+.slider a:hover,
+.slider a:active,
+.slider a:visited {
+	color: #fff;
+	text-decoration: none;
 }
 
 
@@ -283,7 +291,47 @@ body {
 	font-weight: 600;
 	text-transform: uppercase;
 }
+/*****************************************/
+.education .container {
+	padding: 100px 15px;
+	border-bottom: 1px solid #ccc;
+}
+.education .main-text {
+	text-align: justify;
+}
+.education .education-txt,
+.education .education-years {
+	padding: 0 30px;
+}
+.green-point {
+	display: inline-block;
+    background: #2ecc71;
+    color: #fff;
+    padding: 0px 10px;
+    margin: 10px 0 0 0;
+}
+.education-years h4 {
+	font-size: 22px;
+	margin: 50px 0 15px 0;
+	text-transform: uppercase;
+}
 
+/*****************************************/
+.work-ex .container {
+	padding: 100px 15px;
+}
+.work-ex .main-text {
+	text-align: justify;
+}
+.work-ex .work-ex-txt,
+.work-ex .work-ex-years {
+	padding: 0 30px;
+}
+.work-ex-years h4 {
+	font-size: 22px;
+	margin: 50px 0 15px 0;
+	text-transform: uppercase;
+}
 
 
 /*****************************************/

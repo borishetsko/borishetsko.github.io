@@ -23,7 +23,7 @@
 	// });
 	// })(jQuery);
 
-	$("body").on("click", ".to-top a, .main-nav li a", function() {
+	$("body").on("click", ".to-top a, .main-nav li a, .slider a", function() {
 		var idtop = $($(this).attr("href")).offset().top;
 		$('html,body').animate({scrollTop: idtop}, 1500);
 		return false;
