@@ -194,9 +194,67 @@ body {
 	background-position: -888px 2px;
 }
 
-
-
-
+/***************** services *****************/
+.services .container {
+	padding: 30px 15px;
+}
+.services .serv-list {
+	font-size: 0;
+	line-height: 0;
+	text-align: justify;
+	list-style: none;
+}
+.services .serv-list:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+	font-size: 0;
+	line-height: 0;
+}
+.services .serv-list .serv-item {
+	font-size: 16px;
+	line-height: 30px;
+	display: inline-block;
+	width: 30%;
+	text-align: center;
+	box-sizing: border-box;
+}
+.services .serv-list .serv-item .serv-item-wr {
+	padding: 15px;
+}
+.services .serv-list .serv-item img {
+	max-width: 100%;
+	vertical-align: bottom;
+	margin: 15px 0;
+}
+.services .serv-list .serv-item h4 {
+	color: #4b5a65;
+	margin: 20px 0 5px 0;
+	font-size: 19px;
+}
+.services .serv-list .serv-item p {
+	color: #aaaaaa;
+	margin-bottom: 15px;
+	font-size: 15px;
+	line-height: 25px;
+}
+.services .serv-item .serv-btn {
+	color: #fff;
+    font-size: 15px;
+    background: #549cd1;
+    padding: 10px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px #000000a8;
+    border: 1px solid #4285bb;
+    box-shadow: inset 0px 0px 3px #d2d2d2;
+}
+.services .serv-item .serv-btn:hover {
+	color: #ccc;
+	transform: scale(1.05);
+	transition: all 0.2s ease-out;
+}
 
 
 
