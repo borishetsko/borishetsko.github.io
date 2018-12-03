@@ -273,6 +273,42 @@ h3 {
 	width: 100%;
 	max-width: 100%;
 }
+/***************** news *****************/
+.news .container {
+	padding: 50px 15px;
+}
+/******** blog ********/
+.blog .blog-news {
+	position: relative;
+	text-align: justify;
+}
+.blog .blog-news .blog-img,
+.blog .blog-news .blog-txt {
+	display: inline-block;
+	vertical-align: top;
+}
+.blog .blog-news .blog-img {
+	max-width: 150px;
+	width: 100%;
+}
+.blog .blog-news .blog-img img {
+	vertical-align: bottom;
+	width: 100%;
+	max-width: 100%;
+}
+.blog .blog-news .blog-txt {
+	width: calc(100% - 160px);
+}
+.blog .blog-news:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+	font-size: 0;
+	line-height: 0;
+}
+
+
+
 
 
 
