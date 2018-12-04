@@ -274,30 +274,91 @@ h3 {
 	max-width: 100%;
 }
 /***************** news *****************/
+.news h3 {
+	color: #4c5b66;
+	font-size: 20px;
+	margin: 10px 0 15px 0;
+	position: relative;
+}
 .news .container {
 	padding: 50px 15px;
+	position: relative;
+	text-align: justify;
 }
-/******** blog ********/
+.news .container:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+	font-size: 0;
+	line-height: 0;
+}
+.news .date {
+	color: #b5b5b5;
+	margin: 0;
+	font-size: 14px;
+}
+.news p {
+	color: #888888;
+	font-size: 15px;
+	line-height: 24px;
+}
+.news p a {
+	color: #3c92d0;
+	font-size: 15px;
+	text-decoration: none;
+}
+.news h4 {
+	color: #5c5c5c;
+	font-size: 17px;
+	margin-bottom: 5px;
+}
+.news .blog h3 {
+	position: relative;
+	padding-left: 25px;
+}
+.news .blog h3:before {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	background: url(../img/blog-icon.png) center no-repeat/cover;
+}
+.twitter,
+.blog {
+	display: inline-block;
+	width: 47%;
+	vertical-align: top;
+}
+.twitter-news,
+.blog-news {
+	padding-bottom: 15px;
+}
+.twitter-news {
+	padding-top: 15px;
+}
 .blog .blog-news {
 	position: relative;
 	text-align: justify;
 }
-.blog .blog-news .blog-img,
-.blog .blog-news .blog-txt {
+.blog .blog-img,
+.blog .blog-txt {
 	display: inline-block;
 	vertical-align: top;
 }
-.blog .blog-news .blog-img {
+.blog .blog-img {
 	max-width: 150px;
 	width: 100%;
 }
-.blog .blog-news .blog-img img {
+.blog .blog-img img {
 	vertical-align: bottom;
 	width: 100%;
 	max-width: 100%;
 }
-.blog .blog-news .blog-txt {
-	width: calc(100% - 160px);
+.blog .blog-txt {
+	width: calc(100% - 180px);
 }
 .blog .blog-news:after {
 	content: '';
@@ -306,8 +367,20 @@ h3 {
 	font-size: 0;
 	line-height: 0;
 }
-
-
+.news .twitter h3 {
+	position: relative;
+	padding-left: 30px;
+}
+.news .twitter h3:before {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 26px;
+	height: 21px;
+	background: url(../img/twitter-icon.png) center no-repeat/cover;
+}
 
 
 
