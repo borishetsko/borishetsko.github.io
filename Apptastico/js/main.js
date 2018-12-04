@@ -10,6 +10,32 @@
 		  	speed: 1500,
 		  	slidesToShow: 4,
 		  	slidesToScroll: 1,
+		  	responsive: [
+			    {
+			      breakpoint: 1200,
+			      settings: {
+			      	slidesToShow: 3,
+			      	slidesToScroll: 1,
+			        arrows: false
+			      }
+			    },
+			    {
+			      breakpoint: 768,
+			      settings: {
+			      	slidesToShow: 2,
+			      	slidesToScroll: 1,
+			      	arrows: false
+			      }
+			    },
+			    {
+			      breakpoint: 544,
+			      settings: {
+			      	slidesToShow: 1,
+			      	slidesToScroll: 1,
+			      	arrows: false
+			      }
+			    }
+			]
 	});
 
 	})
