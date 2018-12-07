@@ -535,6 +535,33 @@ h3 {
 		display: block;
 		margin: auto;
 	}
+	.banner p:last-child {
+		text-align: center;
+		font-size: 12px;
+	}
+	.banner .banner-link,
+	.banner .banner-btn {
+	    font-size: 12px;
+	}
+	.banner .banner-btn {
+		padding: 5px 20px;
+	}
+	.header .nav ul:after {
+		content: '';
+		width: 100%;
+		display: inline-block;
+	}
+	.header .nav {
+		display: block;
+	    width: 90%;
+	    margin: 15px auto;
+	}
+	.header {
+	    padding: 25px 0 10px 0;
+	}
+	.banner {
+	    padding: 20px 15px 55px 15px;
+	}
 
 }
 
@@ -547,5 +574,19 @@ h3 {
 	}
 	.partners {
 		display: none;
+	}
+	.news .blog .blog-img {
+		max-width: 100%;
+		width: 50%;
+	}
+	.news .blog .blog-txt {
+	    width: 100%;
+	    text-align: left;
+	}
+	.blog .blog-news {
+		text-align: center;
+	}
+	.banner h1 {
+		line-height: 50px;
 	}
 }
