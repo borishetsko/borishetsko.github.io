@@ -569,6 +569,24 @@ h3 {
 
 @media(max-width: 544px) {
 
+	.container {
+		padding: 0 5px;
+	}
+	.header .nav {
+	    width: 100%;
+	}
+	.header .nav li a {
+		padding: 5px 10px;
+	}
+	.news .container {
+	    padding: 5px 10px;
+	}
+	.twitter>p {
+		margin-top: 25px;
+	}
+	.banner {
+	    padding: 20px 5px 55px 5px;
+	}
 	.services .serv-list .serv-item {
 	    width: 90%;
 	}
@@ -588,5 +606,8 @@ h3 {
 	}
 	.banner h1 {
 		line-height: 50px;
+		font-size: 33px;
+		text-align: center;
+		font-weight: 900;
 	}
 }
