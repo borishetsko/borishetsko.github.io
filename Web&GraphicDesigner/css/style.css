@@ -3,6 +3,9 @@
 body {
 	font-family: 'Roboto', sans-serif!important;
 }
+.row {
+	margin: 0!important;
+}
 .back-to-top {
 	position: fixed;
 	bottom: 30px;
