@@ -85,42 +85,47 @@ body {
 
 
 /*********************************************************/
-.menu {
+nav.navbar {
 	background: #252e30;
 }
-.menu .container {
+nav.navbar .container {
 	text-align: justify;
 	vertical-align: middle;
 	font-size: 0;
 	line-height: 0;
 	padding: 15px;
 }
-.menu .logo img {
+nav.navbar .logo img {
 	vertical-align: bottom;
 }
-.menu .logo,
-.menu .menu-box {
+nav.navbar .logo-row,
+nav.navbar .menu-row {
 	display: inline-block;
 	vertical-align: middle;
 	font-size: 16px;
 	line-height: 20px;
 }
-.menu ul {
+ul.main-menu {
 	margin: 0;
+	float: none;
+	display: table;
 }
-.menu li {
+ul.main-menu li {
 	list-style: none;
 	display: inline-block;
 	padding: 0 15px;
+
+	float: none;
+    display: table-cell;
 }
-.menu li a {
+ul.main-menu li a {
 	text-decoration: none;
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 17px;
 	font-weight: 600;
 }
-.menu li a:hover {
+ul.main-menu li a:hover {
 	color: #2ecc71;
 }
 .helper {
