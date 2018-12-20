@@ -3,8 +3,8 @@
 body {
 	font-family: 'Roboto', sans-serif!important;
 }
-.row {
-	margin: 0!important;
+body .row {
+	margin: 0;
 }
 .back-to-top {
 	position: fixed;
@@ -87,6 +87,9 @@ body {
 /*********************************************************/
 nav.navbar {
 	background: #252e30;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
 }
 nav.navbar .container {
 	text-align: justify;
@@ -114,7 +117,7 @@ ul.main-menu li {
 	list-style: none;
 	display: inline-block;
 	padding: 0 15px;
-
+	text-align: center;
 	float: none;
     display: table-cell;
 }
@@ -177,7 +180,7 @@ ul.main-menu li a:hover {
     text-align: justify;
 }
 .about-me .list-items {
-	margin-top: 70px;
+	margin: 70px 0 0 0;
 }
 .about-me .list-items h5 {
 	font-size: 21px;
@@ -510,6 +513,27 @@ ul.main-menu li a:hover {
 	padding-left: 0;
 }
 
+
+@media(max-width: 1200px) {
+
+	ul.main-menu li {
+	    padding: 0 10px;
+	}
+	ul.main-menu li a {
+	    font-size: 14px;
+	    font-weight: 500;
+	}
+	.slider h1 {
+	    font-size: 50px;
+	}
+	.slider a {
+	    padding: 10px 30px;
+	    font-size: 16px;
+	}
+
+}
+
+
 @media(max-width: 992px) {
 
 	.about-me {
@@ -547,6 +571,33 @@ ul.main-menu li a:hover {
 	}
 	.contact .cont_form {
 	    padding: 50px 0 0 0;
+	}
+
+	nav.navbar .logo-row, nav.navbar .menu-row {
+	    display: block;
+	    width: 100%;
+	}
+	ul.main-menu {
+	    margin: 20px 0;
+	    width: 100%;
+	}
+
+}
+
+@media(max-width: 768px) {
+
+	.slider h1 {
+	    font-size: 40px;
+	    padding: 15px 0;
+	    border-top: 1px solid #fff;
+    	border-bottom: 1px solid #fff;
+	}
+	.slider a {
+	    padding: 7px 20px;
+    	font-size: 14px;
+    	font-weight: 400;
+    	margin-top: 40px;
+    	border: 1px solid #fff;
 	}
 
 }
