@@ -532,7 +532,7 @@ ul.main-menu li a:hover {
 	}
 
 }
-
+ 
 
 @media(max-width: 992px) {
 
@@ -572,14 +572,95 @@ ul.main-menu li a:hover {
 	.contact .cont_form {
 	    padding: 50px 0 0 0;
 	}
-
-	nav.navbar .logo-row, nav.navbar .menu-row {
-	    display: block;
-	    width: 100%;
+	.navbar-default .navbar-toggle {
+		color: #fff;
 	}
-	ul.main-menu {
+	nav.navbar .logo-row {
+		position: absolute;
+		top: 22px;
+	}
+	nav.navbar .menu-row {
+		width: 100%;
+	}
+	ul.main-menu li {
+	     padding: 5px 10px;
+	     display: block;
+	     float: left;
+	     width: 100%;
+	     text-align: left; 
+	}
+	.three ul li p {
+	    font-size: 15px;
+	}
+	.main-text {
+	    line-height: 28px;
+	    font-size: 15px;
+	    line-height: 25px;
+	}
+	.about-me p {
+		font-size: 15px;
+	}
+	.three ul li h4 {
+		font-size: 18px;
+	}
+	.about-me .list-items h5 {
+	    font-size: 17px;
+	    margin-bottom: 10px;
+	}
+	.resume p {
+	    color: #919191;
+	    font-size: 15px;
+	    text-align: center;
+	    padding: 0 30px;
+	    margin: 30px 0;
+	}
+	.resume button {
+	    border: 1px solid #2ecc71;
+	    padding: 10px 15px;
+	    font-size: 14px;
+	    font-weight: 500;
+	}
+	.reviews p {
+	    font-size: 15px;
+	    line-height: 25px;
+	}
+	.reviews h4 {
+	    text-transform: uppercase;
 	    margin: 20px 0;
-	    width: 100%;
+	    font-size: 15px;
+	}
+	.portfolio p {
+		margin-bottom: 30px;
+		padding: 0 25px;
+		color: #919191;
+	    font-size: 15px;
+	    line-height: 25px;
+	}
+	.footer .container {
+		padding: 15px;
+	}
+	.footer p {
+		font-size: 12px;
+		margin-bottom: 10px;
+	}
+	.footer li .fab {
+		font-size: 15px;
+		line-height: 30px;
+		width: 30px;
+	}
+	.contact .cont_form label {
+		font-size: 15px;
+	}
+	.contact .cont_form textarea,
+	.contact .cont_form input {
+		font-size: 15px;
+		line-height: 25px;
+		padding: 7px;
+	}
+	.contact .cont_form #sub_btn {
+	    line-height: 35px;
+	    font-size: 15px;
+	    width: 30%;
 	}
 
 }
