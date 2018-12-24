@@ -203,7 +203,7 @@ ul.main-menu li a:hover {
 	height: 41px;
 }
 .about-me .ab-item:nth-child(1):before {
-	background: url(../img/gr-des-ic.png) center no-repeat;
+	background: url(../img/web-des-ic.png) center no-repeat;
 }
 .about-me .ab-item:nth-child(2):before {
 	background: url(../img/gr-des-ic.png) center no-repeat;
@@ -564,7 +564,7 @@ ul.main-menu li a:hover {
 	.reviews .container,
 	.portfolio .container,
 	.contact .container {
-		padding: 30px 10px;
+		padding: 30px 15px;
 	}
 	.contact .cont_txt {
 	    padding: 0;
@@ -616,8 +616,8 @@ ul.main-menu li a:hover {
 	}
 	.resume button {
 	    border: 1px solid #2ecc71;
-	    padding: 10px 15px;
-	    font-size: 14px;
+	    padding: 7px 15px;
+	    font-size: 13px;
 	    font-weight: 500;
 	}
 	.reviews p {
@@ -662,10 +662,35 @@ ul.main-menu li a:hover {
 	    font-size: 15px;
 	    width: 30%;
 	}
+	.portfolio h3,
+	.section-header {
+	    margin: 0 0 20px 0;
+	    font-size: 20px;
+	    /*text-align: center;*/
+	}
+	.skills .skills-progress h4 {
+	    margin: 30px 0 10px 0;
+	    font-size: 16px;
+	}
+	.skills .skills-progress .progress {
+	    height: 20px;
+	    margin-bottom: 20px;
+	}
+	.skills .skills-progress .progress-bar {
+	    font-size: 13px;
+	    line-height: 20px;
+	}
+	.skills .skills-txt button {
+	    border: 1px solid #2ecc71;
+	    padding: 7px 25px;
+	    margin-top: 20px;
+	    font-size: 13px;
+	    font-weight: 500;
+	}
 
 }
 
-@media(max-width: 768px) {
+@media(max-width: 767px) {
 
 	.slider h1 {
 	    font-size: 40px;
@@ -679,6 +704,44 @@ ul.main-menu li a:hover {
     	font-weight: 400;
     	margin-top: 40px;
     	border: 1px solid #fff;
+	}
+
+
+	.about-me .me-txt-box,
+	.work-ex .work-ex-txt p.main-text,
+	.education-txt p.main-text,
+	#education li hr,
+	#education li p.main-text:last-child,
+	#work-ex li hr,
+	#work-ex li p.main-text:last-child,
+	.resume:after,
+	.skills-txt p.main-text,
+	.skills-txt > button,
+	.three {
+		display: none;
+	}
+	.work-ex .container,
+	.education .container {
+	    padding: 30px 15px;
+	    border-bottom: none;
+	}
+	.work-ex-years h4,
+	.education-years h4 {
+	    font-size: 15px;
+	    margin: 30px 0 15px 0;
+	}
+	.about-me .me-img-box {
+	    display: block;
+	    margin: auto;
+	    width: 100%;
+	    padding: 0;
+	}
+	.about-me .me-img-box img {
+		display: block;
+	    max-width: 100%;
+	    height: auto;
+	    width: 50%;
+	    margin: auto;
 	}
 
 }
