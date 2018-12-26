@@ -2,6 +2,7 @@
 
 body {
 	font-family: 'Roboto', sans-serif!important;
+	overflow-x: hidden;
 }
 body .row {
 	margin: 0;
@@ -11,6 +12,12 @@ body .row {
 	bottom: 30px;
 	right: 35px;
 	z-index: 10;
+}
+.to-top {
+	display: none;
+}
+.to-top.vis {
+	display: block;
 }
 .fa-arrow-up:before {
     background: #00000094;
