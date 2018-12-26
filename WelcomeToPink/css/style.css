@@ -175,3 +175,22 @@ body {
 .footer .copyright {
 	padding-top: 30px;
 }
+
+
+
+
+
+@media(max-width: 991px) {
+
+	.banner h1 {
+	    font-size: 50px;
+	    padding-top: 50px;
+	}
+	.banner h3 {
+	    font-size: 25px;
+	}
+	.footer .container {
+	    padding: 10px 15px;
+	}
+
+}
