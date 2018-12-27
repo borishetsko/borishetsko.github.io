@@ -45,14 +45,7 @@ body {
 	padding-top: 100px;
 	text-shadow: 1px 1px 1px #000;
 }
-.banner h3 {
-	font-size: 30px;
-	text-transform: none;
-	margin: 0;
-	color: #fff;
-	font-weight: 400;
-	text-shadow: 1px 1px 1px #000;
-}
+
 /*******************tips*******************/
 .tips {
 	background: #fff;
@@ -66,7 +59,7 @@ body {
 .tips ul li .tips-wr {
 	border-radius: 50%;
 }
-.tips h2 {
+.tips h3 {
 	color: #404040;
 }
 .tips p {
@@ -139,6 +132,7 @@ body {
 }
 .news p {
 	color: #9a9a9a;
+	text-align: justify;
 }
 /*******************footer*******************/
 .footer {
@@ -155,6 +149,9 @@ body {
 }
 .footer .sub-menu-box a:hover {
 	color: #fff;
+}
+.footer .social .nav {
+    justify-content: space-between;
 }
 .footer .social li a {
 	color: #292d22;
@@ -177,20 +174,100 @@ body {
 }
 
 
+	
 
 
+
+
+
+/***************** @MEDIA *****************/
+@media(max-width: 1199px) {
+	.news {
+	    box-shadow: none;
+	}
+	.menu li a {
+	    font-size: 16px;
+	}
+	html>body {
+		font-size: 15px;
+	}
+	.banner h1,
+	html>body h1 {
+		font-size: 80px;
+	}
+	.tips h2,
+	html>body h2 {
+	    font-size: 28px;
+	}
+	.banner h3,
+	html>body h3 {
+		font-size: 25px;
+	}
+	.footer h4,
+	html>body h4 {
+		font-size: 22px;
+	}
+	.header {
+		padding: 10px 0;
+	}
+}
 
 @media(max-width: 991px) {
-
-	.banner h1 {
-	    font-size: 50px;
-	    padding-top: 50px;
-	}
-	.banner h3 {
-	    font-size: 25px;
+	.news .container .news-box {
+	    border: 1px solid #ccc;
+	    box-shadow: inset 0px 0px 10px #0000001c;
+	    margin: 15px 0;
 	}
 	.footer .container {
 	    padding: 10px 15px;
 	}
+	.footer .social .fab {
+	    display: inline-block;
+	    width: 30px;
+	    line-height: 30px;
+	    background: #8b8b8b;
+	    border-radius: 50%;
+	    font-size: 17px;
+	}
+	.footer .social .nav {
+		justify-content: center;
+	}
+	.footer .copyright {
+	    padding-top: 0px;
+	}
+	.footer .social li a {
+	    padding: 20px 10px;
+	}
+	.news .news-img-box img {
+	    width: 45%;
+	}
+}
 
+@media(max-width: 767px) {
+	.banner h1 {
+	    font-size: 50px;
+	    padding-top: 50px;
+	}
+	html>body {
+		font-size: 14px;
+	}
+	.footer .sub-menu-box {
+		display: none;
+	}
+	.footer .container {
+	    padding: 0px 15px;
+	}
+	.news .news-img-box img {
+	    width: 65%;
+	}
+}
+
+@media(max-width: 575px) {
+	.tips .container>h3,
+	.tips .container>p {
+		display: none;
+	}
+	.tips .container {
+	    padding: 5px 15px;
+	}
 }
