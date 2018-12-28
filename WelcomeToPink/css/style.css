@@ -11,21 +11,34 @@ body {
 	width: 100%;
 }
 /*******************menu*******************/
-.menu li a {
+nav.navbar li.nav-item a.nav-link {
 	color: #736e6e;
 	font-size: 18px;
 	font-weight: 500;
 	transition: all 0.25s;
+	padding: 5px 25px;
 }
-.menu li a:hover,
-.menu li a:active {
+nav.navbar li.nav-item a.nav-link:hover,
+nav.navbar li.nav-item a.nav-link:active {
 	color: #000;
 }
-.menu .login a {
+nav.navbar li.login a.nav-link {
 	background: #de6d6e;
     border-radius: 5px;
     color: #fff;
 }
+nav.navbar {
+	justify-content: flex-end;
+}
+nav.navbar .navbar-collapse {
+	justify-content: flex-end;
+}
+
+nav.navbar .navbar-toggler {
+    background-color: #ff0000ab;
+    border: 1px solid red;
+}
+
 /*******************banner*******************/
 .banner {
 	min-height: 100vh;
@@ -213,6 +226,31 @@ body {
 }
 
 @media(max-width: 991px) {
+	.header {
+	    background: rgba(255, 255, 255, 0.9);
+	}
+	.header .logo {
+		position: absolute;
+	    width: auto;
+	    z-index: 99;
+	}
+	nav.navbar .navbar-collapse {
+	    margin-top: 15px;
+	    padding-top: 5px;
+	    border-top: 1px solid #675c5c;
+	}
+	nav.navbar li.nav-item a.nav-link {
+		color: #000;
+		font-size: 16px;
+		padding: 7px 25px 7px 35px;
+	}
+	nav.navbar li.login a.nav-link {
+	    color: #fff;
+	}
+	li.login {
+		text-align: center;
+    	padding: 15px 50px 10px 50px;
+	}
 	.news .container .news-box {
 	    border: 1px solid #ccc;
 	    box-shadow: inset 0px 0px 10px #0000001c;
