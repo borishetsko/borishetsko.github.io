@@ -41,9 +41,11 @@ nav.navbar .navbar-toggler {
 
 /*******************banner*******************/
 .banner {
-	min-height: 100vh;
 	height: 100vh;
-	background: url(../img/banner.png) center top no-repeat/cover;
+	background-image: url(../img/banner.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 	display: flex;
 	align-items: center;
 	padding: 0;
