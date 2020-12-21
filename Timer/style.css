@@ -4,21 +4,33 @@
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
 }
-#timer-box {
+.wrap {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     background-image: url(bg.jpg);
     background-size: cover;
     background-position: center center;
     min-height: 100vh;
 }
+#timer-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 h1 {
     text-align: center;
+    font-size: 55px;
+}
+h1>span {
+    color: red;
+    font-weight: 900;
+    font-size: 70px;
 }
 .c-el {
     text-align: center;
-    margin: 45px;
+    margin: 50px;
 }
 .main-header {
     font-size: 80px;
