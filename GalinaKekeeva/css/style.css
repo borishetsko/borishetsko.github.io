@@ -12,6 +12,8 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
+    /* padding: 100px 0; */
+    box-sizing: border-box;
 }
 .main-screen:after {
     content: '';
@@ -27,6 +29,9 @@ body {
     height: 100vh;
     z-index: 5;
     position: relative;
+    padding: 100px 0;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
 }
 .main-screen .main-screen__title h1 {
     font-size: 72px;
