@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+#timer-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+}
+h1 {
+    text-align: center;
+}
+.c-el {
+    text-align: center;
+    margin: 45px;
+}
+.main-header {
+    font-size: 80px;
+}
