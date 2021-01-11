@@ -449,7 +449,7 @@
 
 /*======================== @MEDIA ========================*/
 @media (max-width: 1200px) {
-  .header .nav-link {
+  .header .container .navbar .nav-link {
     font-size: 15px;
   }
 
@@ -462,10 +462,10 @@
   .banner .banner-txt {
     margin-bottom: 10px;
   }
-  .banner .banner-title {
+  .banner .banner-txt .banner-title {
     font-size: 40px;
   }
-  .banner .banner-subtitle {
+  .banner .banner-txt .banner-subtitle {
     font-size: 14px;
   }
 
@@ -491,11 +491,11 @@
     width: 100%;
   }
 
-  .copyright .copyright-txt {
+  .copyright .container .copyright-txt {
     font-size: 14px;
   }
 
-  .avone-item {
+  .avone-styles .container .avone-styles-box .avone-item {
     min-height: 50vh;
   }
 
@@ -504,15 +504,15 @@
   }
 }
 @media (max-width: 768px) {
-  .avone-styles .avone-styles-box-img {
-    max-width: 50%;
-    border-width: 5px;
+  .avone-styles .container .avone-styles-box-img {
+    max-width: 50% !important;
+    border-width: 5px !important;
   }
 
-  .banner .banner .banner-title {
+  .banner .container .banner-txt .banner .banner-title {
     margin: 5px 0;
   }
-  .banner .banner .banner-subtitle {
+  .banner .container .banner-txt .banner .banner-subtitle {
     font-size: 15px;
     margin: 5px 0;
   }
@@ -524,7 +524,7 @@
     text-align: center;
   }
   .footer .container .footer-bottom {
-    ptext-align: center;
+    text-align: center;
   }
   .footer .container .footer .social-links ul {
     justify-content: center;
@@ -547,12 +547,12 @@
     text-align: center;
   }
 
-  .avone-styles .avone-styles-box {
+  .avone-styles .container .avone-styles-box {
     grid-template-columns: 1fr;
     grid-gap: 0;
     padding: 60px 0;
   }
-  .avone-styles .avone-first-col {
+  .avone-styles .container .avone-first-col {
     display: none;
   }
 
@@ -562,3 +562,5 @@
     text-align: left;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,7 +1,13 @@
 @media (max-width: 1200px) {
 
-    .header .nav-link {
-        font-size: 15px;
+    .header {
+        .container {
+            .navbar {
+                .nav-link {
+                    font-size: 15px;
+                }
+            }
+        } 
     }
     .banner-second {
         background-image: url(../img/banner-second-bg.jpg);
@@ -15,13 +21,15 @@
     .banner {
         .banner-txt {
             margin-bottom: 10px;
+
+            .banner-title {
+                font-size: 40px;
+            }
+            .banner-subtitle {
+                font-size: 14px;
+            }
         }
-        .banner-title {
-            font-size: 40px;
-        }
-        .banner-subtitle {
-            font-size: 14px;
-        }
+        
     }
     .category {
         .container {
@@ -51,13 +59,24 @@
         }
     }
     .copyright {
-        .copyright-txt {
-            font-size: 14px;
+        .container {
+            .copyright-txt {
+                font-size: 14px;
+            }
+        }
+        
+    }
+    .avone-styles {
+        .container {
+            .avone-styles-box {
+                .avone-item {
+                    min-height: 50vh;
+                }
+            }
+            
         }
     }
-    .avone-item {
-        min-height: 50vh;
-    }
+    
     .product-item {
         margin-bottom: 15px;
     }
@@ -65,17 +84,25 @@
 
 @media (max-width: 768px) {
 
-    .avone-styles .avone-styles-box-img {
-        max-width: 50%;
-        border-width: 5px;
+    .avone-styles {
+        .container {
+            .avone-styles-box-img {
+                max-width: 50%!important;
+                border-width: 5px!important;
+            }
+        }
     }
     .banner {
-        .banner .banner-title {
-            margin: 5px 0;
-        }
-        .banner .banner-subtitle {
-            font-size: 15px;
-            margin: 5px 0;
+        .container {
+            .banner-txt {
+                .banner .banner-title {
+                    margin: 5px 0;
+                }
+                .banner .banner-subtitle {
+                    font-size: 15px;
+                    margin: 5px 0;
+                }
+            }
         }
     }
     .footer {
@@ -85,7 +112,7 @@
                 text-align: center;
             }
             .footer-bottom {
-                ptext-align: center;
+                text-align: center;
             }
             .footer .social-links ul {
                 justify-content: center;
@@ -114,14 +141,17 @@
         text-align: center;
     }
     .avone-styles {
-        .avone-styles-box {
-            grid-template-columns: 1fr;
-            grid-gap: 0;
-            padding: 60px 0;
+        .container {
+            .avone-styles-box {
+                grid-template-columns: 1fr;
+                grid-gap: 0;
+                padding: 60px 0;
+            }
+            .avone-first-col {
+                display: none;
+            }
         }
-        .avone-first-col {
-            display: none;
-        }
+        
     }
     .footer {
         .footer-nav {
