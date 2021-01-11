@@ -4,7 +4,7 @@ let Elminutes = document.getElementById('minutes');
 let Elseconds = document.getElementById('seconds');
 
 function count () {
-    let newYearDate = new Date(2021,0,1,0,0,0);
+    let newYearDate = new Date(2022,0,1,0,0,0);
     let currentDate = new Date();
 
     let days = Math.floor((newYearDate - currentDate) / (1000 * 60 * 60 * 24));
