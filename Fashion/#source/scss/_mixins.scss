@@ -1,0 +1,64 @@
+@mixin banner-title {
+    color: $black;
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 15px 0;
+}
+@mixin section-sub-title {
+    font-size: 18px;
+    color: $black;
+    margin: 15px 0;
+    text-transform: uppercase;
+}
+@mixin section-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: $black;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+@mixin section-subtitle {
+    font-size: 15px;
+    color: $black;
+    margin-bottom: 15px;
+};
+@mixin black-btn {
+    background-color: $black;
+    font-size: 18px;
+    color: $white;
+    text-transform: uppercase;
+    margin: 15px 0;
+    border: none;
+    padding: 0 25px;
+    line-height: 40px;
+    transition: all .4s ease;
+}
+@mixin product-title {
+    color: $black;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+@mixin product-brand {
+    display: inline-block;
+    color: $dark-grey;
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+@mixin product-old-price {
+    color: $dark-grey;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+@mixin product-new-price {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    color: $red;
+}

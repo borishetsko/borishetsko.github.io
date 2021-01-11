@@ -1,0 +1,33 @@
+.banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    .banner-txt {
+        margin-bottom: 100px;
+
+        .banner-title {
+            @include banner-title;
+        }
+
+        .banner-subtitle {
+            @include section-sub-title;
+            
+            span {
+                text-transform: none;
+            }
+        }
+        .banner-btn {
+            @include black-btn;
+
+            &:hover {
+                background-color: $white;
+                color: $black;
+            }
+        }
+
+        .banner-btn-first {
+            margin-right: 40px;
+        }
+    }        
+}

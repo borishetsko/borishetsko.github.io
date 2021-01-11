@@ -1,0 +1,101 @@
+/*======================== FONTS ========================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/*======================== VARIABLES ========================*/
+@import '_variables';
+
+/*======================== MIXINS ========================*/
+@import '_mixins';
+
+/*======================== WRAP ========================*/
+#body {
+    font-family: $font-family;
+    font-size: 15px;
+    color: $black;
+}
+
+/*======================== HEADER ========================*/
+@import '_header';
+
+/*======================== BANNER-FIRST ========================*/
+@import '_banner';
+.banner-first {
+    background-image: url(../img/banner-first-bg.jpg);
+}
+.banner-content-first {
+    min-height: calc(100vh - 83px);
+}
+
+
+/*======================== CATEGORY ========================*/
+@import '_category';
+
+/*======================== WOMANS-FASHION ========================*/
+.womans-fashion .container {
+    padding: 60px 0;
+}
+
+.womans-fashion .row {
+    padding-top: 40px;
+}
+
+@import 'products';
+
+.womans-fashion .product-item:nth-child(1) .product-img-box {
+    background-image: url(../img/womans-prod-1.jpg);
+}
+.womans-fashion .product-item:nth-child(2) .product-img-box {
+    background-image: url(../img/womans-prod-2.jpg);
+}
+.womans-fashion .product-item:nth-child(3) .product-img-box {
+    background-image: url(../img/womans-prod-3.jpg);
+}
+.womans-fashion .product-item:nth-child(4) .product-img-box {
+    background-image: url(../img/womans-prod-4.jpg);
+}
+
+/*======================== MANS-FASHION ========================*/
+.mans-fashion .container {
+    padding: 60px 0;
+}
+
+.mans-fashion .row {
+    padding-top: 40px;
+}
+
+.mans-fashion .product-item:nth-child(1) .product-img-box {
+    background-image: url(../img/mans-prod-1.jpg);
+}
+
+.mans-fashion .product-item:nth-child(2) .product-img-box {
+    background-image: url(../img/mans-prod-2.jpg);
+}
+
+.mans-fashion .product-item:nth-child(3) .product-img-box {
+    background-image: url(../img/mans-prod-3.jpg);
+}
+
+.mans-fashion .product-item:nth-child(4) .product-img-box {
+    background-image: url(../img/mans-prod-4.jpg);
+}
+
+/*======================== AVONE-STYLES ========================*/
+@import '_avone-styles';
+
+/*======================== BANNER-SECOND ========================*/
+.banner-second {
+    background-image: url(../img/banner-second-bg.jpg);
+}
+
+.banner-content-second {
+    min-height: 100vh;
+}
+
+/*======================== FOOTER ========================*/
+@import 'footer';
+
+/*======================== COPYRIGHT ========================*/
+@import '_copyright';
+
+/*======================== @MEDIA ========================*/
+@import '_@media';

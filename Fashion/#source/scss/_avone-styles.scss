@@ -1,0 +1,94 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 88888888888888888888888888888888888888888888888888888888888
+.avone-styles {
+
+    .container {
+        padding: 60px 15px;
+
+        .avone-styles .section-subtitle {
+            text-transform: uppercase;
+        }
+
+        .avone-styles-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 25px;
+            padding: 120px 0;
+
+            .avone-item.active {
+                .avone-styles-inner {
+                    height: 70%;
+                    margin-top: -50px;
+                    margin-right: 50px;
+                }
+            }
+
+            .avone-first-col .avone-styles-inner {
+                background-image: url(../img/avon-style-1.jpg); 
+            }
+            
+            .avone-second-col .avone-styles-inner {
+                background-image: url(../img/avon-style-2.jpg);
+            }
+
+            .avone-item {
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                min-height: 80vh;
+                position: relative;
+                transition: all 0.5s ease;
+
+                .avone-styles-inner {
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    height: 100%;
+                    transition: all 0.5s ease;
+                }
+
+                .avone-styles-box-item {
+                    display: none;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+
+                    .avone-styles-link {
+                        font-size: 15px;
+                        text-transform: uppercase;
+                        color: $black;
+                        padding-bottom: 50px;
+                    
+                        &:hover {
+                            color: $black;
+                            text-decoration: underline;
+                        }
+                    
+                    }
+
+                    .avone-styles-box-img {
+                        border-top: 20px solid $white;
+                        border-left: 20px solid $white;
+                    }
+                }
+            }
+
+        }
+
+    }
+}

@@ -1,7 +1,7 @@
 body {
     background: #000!important;
-    font-family: 'Open Sans', sans-serif;
-    color: #333;
+    /* font-family: 'Open Sans', sans-serif; */
+    /* color: #333; */
 }
 
 /*===================================== MAIN-SCREEN =====================================*/
@@ -12,7 +12,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
-    /* padding: 100px 0; */
+    overflow: hidden;
     box-sizing: border-box;
 }
 .main-screen:after {
@@ -93,14 +93,61 @@ body {
 
 
 
+/*===================================== HEADER =====================================*/
+.header {
+    background-color: #fff;
+}
+.header .navbar-dark .navbar-nav .nav-link {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 1;
+    padding: 40px 20px;
+}
+.header .navbar-dark .navbar-nav .nav-link:hover {
+    color: #000;
+    text-decoration: underline;
+}
+.header .logo a {
+    line-height: 100px;
+}
+.header .logo,
+.header .navbar {
+    padding: 0;
+}
 
 
 
 
 
 
+/*===================================== SERVICES =====================================*/
+.services {
+    color: #fff;
+}
+.services .container {
+    padding: 75px 15px 35px 15px;
+}
+.services p {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 25px 0;
+}
 
 
+/*===================================== EVENTS =====================================*/
+.events {
+    color: #fff;
+}
+.events .container {
+    padding: 35px 15px 75px 15px;
+}
+.events p {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 25px 0;
+}
 
 
 /*===================================== @MEDIA =====================================*/

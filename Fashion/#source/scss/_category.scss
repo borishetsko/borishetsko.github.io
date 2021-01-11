@@ -1,0 +1,85 @@
+.category .container {
+    padding: 60px 15px;
+
+    .category-box {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 25px;
+    
+        .category-item:nth-child(1) {
+            grid-column: 1/3;
+            background-image: url(../img/category-1.jpg); 
+        }
+    
+        .category-item:nth-child(2) {
+            grid-column: 3/5;
+            grid-row: 1/3;
+            background-image: url(../img/category-2.jpg); 
+        }
+        .category-item:nth-child(3) {
+            background-image: url(../img/category-3.jpg); 
+        }
+    
+        .category-item:nth-child(4) {
+            background-image: url(../img/category-4.jpg); 
+        }
+    
+        .category-item {
+            min-height: 32vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+            transition: all 0.9s ease;
+    
+            &::after {
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                content: ' ';
+                background-color: rgba(0,0,0,.4);
+                z-index: 1;
+                opacity: 0;
+            }
+    
+            &:hover {
+                cursor: pointer;
+    
+                .category-name {
+                    opacity: 1;
+                }
+                
+                &::after {
+                    opacity: 1;
+                }
+            }
+    
+            .category-name {
+                z-index: 100;
+                opacity: 0;
+                transition: all 0.6s ease-in;
+        
+                .category-link {
+                    color: $black;
+                    padding: 0 25px;
+                    line-height: 45px;
+                    font-size: 18px;
+                    background-color: $white;
+                    text-decoration: none;
+            
+                    &:hover {
+                        color: $white;
+                        background-color: $black;
+                    }
+                }
+        
+            }
+        }
+        
+    }
+    
+}

@@ -1,0 +1,18 @@
+.copyright {
+    background-color: #e7f5f8;
+
+    .container {
+        padding: 30px 15px;
+
+        .copyright-txt {
+            margin: 0;
+            font-size: 20px;
+            font-weight: 300;
+            color: $black;
+
+            .copyright-link {
+                color: $black;
+            }
+        }
+    }
+}

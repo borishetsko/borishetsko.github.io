@@ -1,0 +1,55 @@
+.section-title {
+    @include section-title;
+}
+.section-subtitle {
+    @include section-subtitle;
+}
+.product-brand {
+    @include product-brand;
+}
+.product-title {
+    @include product-title;
+}
+.product-item {
+
+    &:hover {
+        cursor: pointer;
+
+        .product-img-box {
+            
+            &::after {
+                margin: 10px; 
+            }
+        }
+
+    }
+
+}
+.product-img-box {
+    min-height: 370px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    margin-bottom: 15px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        border: 3px solid $white;
+        z-index: 100;
+        transition: all 0.3s ease;
+    }
+
+}
+.product-old-price {
+    @include product-old-price;
+}
+.product-new-price {
+    @include product-new-price;
+}

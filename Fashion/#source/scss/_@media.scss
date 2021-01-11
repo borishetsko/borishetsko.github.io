@@ -1,0 +1,133 @@
+@media (max-width: 1200px) {
+
+    .header .nav-link {
+        font-size: 15px;
+    }
+    .banner-second {
+        background-image: url(../img/banner-second-bg.jpg);
+        background-position: right top;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .banner {
+        .banner-txt {
+            margin-bottom: 10px;
+        }
+        .banner-title {
+            font-size: 40px;
+        }
+        .banner-subtitle {
+            font-size: 14px;
+        }
+    }
+    .category {
+        .container {
+            .category-box {
+                display: block;
+                .category-item {
+                    margin: 10px;
+                    background-position: center top;
+                    padding: 10px;
+                }
+            }
+        }
+        
+    }
+    .footer {
+        .container {
+            padding: 25px 15px;
+                .footer-top {
+                    padding: 5px 0;
+                }
+                .footer-bottom {
+                    padding: 20px 0;
+                }
+                .footer .footer-txt {
+                    width: 100%;
+                }
+        }
+    }
+    .copyright {
+        .copyright-txt {
+            font-size: 14px;
+        }
+    }
+    .avone-item {
+        min-height: 50vh;
+    }
+    .product-item {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .avone-styles .avone-styles-box-img {
+        max-width: 50%;
+        border-width: 5px;
+    }
+    .banner {
+        .banner .banner-title {
+            margin: 5px 0;
+        }
+        .banner .banner-subtitle {
+            font-size: 15px;
+            margin: 5px 0;
+        }
+    }
+    .footer {
+        .container {
+            padding: 25px 15px;
+            .footer-top {
+                text-align: center;
+            }
+            .footer-bottom {
+                ptext-align: center;
+            }
+            .footer .social-links ul {
+                justify-content: center;
+            }
+        }
+    }   
+}
+
+
+@media (max-width: 544px) {
+
+    .banner {
+        .banner-content {
+            justify-content: flex-end!important;
+            align-items: center!important;
+            text-align: center;
+            min-height: 75vh;
+        }
+        .banner-btn-first {
+            margin-right: 10px;
+        }
+    }
+    .header a.navbar-brand {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .avone-styles {
+        .avone-styles-box {
+            grid-template-columns: 1fr;
+            grid-gap: 0;
+            padding: 60px 0;
+        }
+        .avone-first-col {
+            display: none;
+        }
+    }
+    .footer {
+        .footer-nav {
+            display: block;
+            width: 100%;
+            text-align: left;
+        }
+    }
+}
