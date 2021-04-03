@@ -1,0 +1,114 @@
+body {
+	background: linear-gradient(170deg,#fff,#ccc);
+	min-height: 100vh;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: cursive;
+}
+
+ul,li{
+	list-style: none!important;
+}
+
+.wrap {
+	margin: 0 auto;
+	max-width: 600px;
+	width: 100%;
+}
+
+.main-heading {
+	color: rgba(179, 131, 226, .7);
+	font-size: 200px;
+	margin: 0 0 30px 0;
+	text-align: center;
+}
+
+.todo-list {
+	margin: 0;
+	padding: 0;
+}
+
+.todo-list li {
+	width: 100%;
+    margin: 0;
+    padding: 15px 10px;
+	border: 1px solid #ccc;
+	color: rgb(139, 136, 136);
+	background: rgba(255, 255, 255,.7);
+    box-sizing: border-box;
+    position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: cursive;
+}
+
+.todo-list li #check,
+.todo-list li #delete {
+	margin: 0;
+}
+
+.todo-list li #check {
+	margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.todo-list li #delete {
+	margin-left: 10px;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 1px solid #a7a1a1;
+    border-radius: 3px;
+}
+
+.input-box {
+	position: relative;
+}
+
+.input {
+	border: 2px solid #ccc;
+	outline: none;
+	font-size: 35px;
+	padding: 15px 60px 15px 15px;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	color: rgb(139, 136, 136);
+	margin-bottom: 20px;
+	font-family: cursive;
+
+}
+
+.input::placeholder {
+	color: rgba(179, 131, 226, .3);
+}
+
+.button {
+	position: absolute;
+	right: 2px;
+	top: 5px;
+	border: none;
+	outline: none;
+	font-size: 30px;
+	padding: 15px 23px;
+	display: block;
+	background-color: transparent;
+	z-index: 10;
+	box-sizing: border-box;
+	color: rgb(139, 136, 136);
+	cursor: pointer;
+	font-family: cursive;
+}
+
+#input:invalid + #button {
+	pointer-events: none;
+}
+
+.done {
+	opacity: 0.5;
+	text-decoration: line-through;
+}
