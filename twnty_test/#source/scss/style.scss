@@ -1,0 +1,41 @@
+@import '_reset';
+@import '_fonts';
+@import '_variables';
+@import '_mixins';
+
+html {
+    font-size: 0.277vw;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: TTNorms, sans-serif;
+    font-size: 14rem;
+    line-height: 1.25;
+    font-weight: 400;
+}
+
+body.lock {
+    overflow: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 40rem;
+}
+
+.subtitle {
+    @include subtitle;
+}
+
+.title {
+    @include title;
+}
+
+@import '_hero';
+
+@import '_support';
+
+@import '_footer';
+
+@import '_@media';

@@ -1,0 +1,130 @@
+.hero {
+    position: relative;
+    background-image: url(../img/hero-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #f0f0f1;
+
+    &__title {
+        font-size: 24rem;
+        margin-bottom: 20rem;
+    }
+
+    &__subtitle {
+        margin-bottom: 30rem;
+    }
+
+    &__arr {
+        display: inline-block;
+        height: 30rem;
+        width: 10rem;
+        background-image: url(../img/arr.png);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+    }
+}
+  
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100vh;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0;
+    padding-top: 35rem;
+    position: relative;
+}
+  
+.header-logo {
+    z-index: 3;
+    
+    &__img {
+        min-width: 75rem;
+    }
+}
+  
+.lang {
+    display: none;
+}
+
+// ============== menu ================
+.menu {
+    position: fixed;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: $dark-bg;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 40rem;
+    transition: all 0.6s ease 0s;
+
+    &__link {
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.menu.active {
+    top: 0;
+    font-size: 34rem;
+    font-weight: 700;
+    line-height: 48rem;
+}
+  
+// ============== burger ================
+.burger {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 26rem;
+    height: 14rem;
+}
+.burger span {
+    width: 100%;
+    height: 2rem;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    transition: transform 0.2s linear;
+}
+.burger span:nth-child(1) {
+    top: 0;
+}
+.burger span:nth-child(2) {
+    top: 6rem;
+}
+.burger span:nth-child(3) {
+    bottom: 0;
+}
+.burger.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 6rem;
+}
+.burger.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    bottom: 6rem;
+}
+.burger.active span:nth-child(2) {
+    transform: scale(0);
+}

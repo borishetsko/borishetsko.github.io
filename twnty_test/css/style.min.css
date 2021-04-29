@@ -1,0 +1,140 @@
+*,::after,::before{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0;margin:0}
+blockquote,body,dd,dl,figure,h1,h2,h3,h4,p{margin:0}
+ol[role=list],ul[role=list]{list-style:none}
+li,ul{list-style:none}
+html:focus-within{scroll-behavior:smooth}
+html{font-size:14px}
+body{min-height:100vh;text-rendering:optimizeSpeed;line-height:1.3}
+a:not([class]){text-decoration-skip-ink:auto}
+a{text-decoration:none;color:inherit}
+img,picture{max-width:100%;display:block}
+button,input,select,textarea{font:inherit}
+@font-face{font-family:TTNorms;font-weight:400;font-style:normal;font-display:swap;src:url(../fonts/TTNormsPro-Regular.eot);src:local("TTNorms"),url(../fonts/TTNormsPro-Regular.woff2) format("woff2"),url(../fonts/TTNormsPro-Regulard.woff) format("woff"),url(../fonts/TTNormsPro-Regular.ttf) format("ttf")}
+@font-face{font-family:TTNorms;font-weight:700;font-style:normal;font-display:swap;src:url(../fonts/TTNormsPro-Bold.eot);src:local("TTNorms"),url(../fonts/TTNormsPro-Bold.woff2) format("woff2"),url(../fonts/TTNormsPro-Bold.woff) format("woff"),url(../fonts/TTNormsPro-Bold.ttf) format("ttf")}
+html{font-size:.277vw;scroll-behavior:smooth}
+body{font-family:TTNorms,sans-serif;font-size:14rem;line-height:1.25;font-weight:400}
+body.lock{overflow:hidden}
+.container{margin:0 auto;padding:40rem}
+.subtitle{font-size:18rem;font-weight:400}
+.title{font-size:24rem;font-weight:700}
+.hero{position:relative;background-image:url(../img/hero-bg.jpg?2104291445);background-position:center center;background-size:cover;background-repeat:no-repeat;color:#f0f0f1}
+.hero__title{font-size:24rem;margin-bottom:20rem}
+.hero__subtitle{margin-bottom:30rem}
+.hero__arr{display:inline-block;height:30rem;width:10rem;background-image:url(../img/arr.png?2104291445);background-position:center bottom;background-repeat:no-repeat}
+.hero-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;height:100vh}
+.header{position:absolute;top:0;left:0;right:0}
+.header-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding-bottom:0;padding-top:35rem;position:relative}
+.header-logo{z-index:3}
+.header-logo__img{min-width:75rem}
+.lang{display:none}
+.menu{position:fixed;left:0;top:-100%;width:100%;height:100%;background-color:#1c242c;z-index:1;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;padding:40rem;-webkit-transition:all .6s ease 0s;transition:all .6s ease 0s}
+.menu__link{-webkit-transition:all .5s ease-in-out;transition:all .5s ease-in-out}
+.menu__link:hover{text-decoration:underline}
+.menu.active{top:0;font-size:34rem;font-weight:700;line-height:48rem}
+.burger{display:block;position:relative;z-index:3;width:26rem;height:14rem}
+.burger span{width:100%;height:2rem;background-color:#fff;position:absolute;left:0;-webkit-transition:-webkit-transform .2s linear;transition:-webkit-transform .2s linear;transition:transform .2s linear;transition:transform .2s linear,-webkit-transform .2s linear}
+.burger span:nth-child(1){top:0}
+.burger span:nth-child(2){top:6rem}
+.burger span:nth-child(3){bottom:0}
+.burger.active span:nth-child(1){-webkit-transform:rotate(45deg);transform:rotate(45deg);top:6rem}
+.burger.active span:nth-child(3){-webkit-transform:rotate(-45deg);transform:rotate(-45deg);bottom:6rem}
+.burger.active span:nth-child(2){-webkit-transform:scale(0);transform:scale(0)}
+.support{background-color:#d9d0c0}
+.support__subtitle{text-align:center;margin:20rem 0 30rem 0;color:#1f242d}
+.clients{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-bottom:20rem}
+.clients__item{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:20rem;width:40%}
+.clients__img{max-width:100%;height:auto}
+.tilray img{min-width:120rem}
+.apple img{min-width:39rem}
+.bauerfeind img{min-width:120rem}
+.audi img{min-width:77rem}
+.subaru img{min-width:90rem}
+.bench img{min-width:95rem}
+.footer{background-color:#1c242c;color:#e0dfde}
+.footer__title{font-size:24rem;margin-bottom:40rem}
+.footer span{display:block}
+.footer-container{padding-bottom:45rem}
+.copyright-container{padding-top:25rem;padding-bottom:30rem;border-top:1px solid #f2f1ef}
+.footer-contact__adress{margin-bottom:25rem}
+.footer-contact__phone-mail{margin-bottom:25rem}
+.footer-contact__social{margin-bottom:40rem}
+.footer-contact__social a{display:inline-block;margin-right:15rem}
+.cont-form__input{margin-bottom:10rem;color:#1c242c;border-radius:0;border:none;padding:12rem 8rem;outline:0;display:block;width:100%;font-size:10rem;line-height:14rem;background-color:#e0dfde}
+.cont-form__submit{display:block;font-size:20rem;font-weight:700;color:#e0dfde;-webkit-box-shadow:none;box-shadow:none;border:none;outline:0;background-color:transparent;padding:0;cursor:pointer}
+.cont-form__checkbox{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:20rem}
+.cont-form__check{width:16rem;height:16rem;background-color:#e0dfde}
+.cont-form label{font-size:7rem;max-width:50%;margin-left:8rem}
+.checkbox__text a{text-decoration:underline}
+textarea.cont-form__input{min-height:113rem}
+.footer-logo{margin-bottom:30rem}
+.footer-logo__img{min-width:12rem}
+.footer-nav{margin-bottom:40rem}
+@media (min-width:768px){
+html{font-size:.13vw}
+.container{padding:80rem}
+.title{font-size:50rem}
+.header-logo__img{min-width:107rem}
+.menu.active{font-size:62rem;line-height:80rem}
+.hero__title{font-size:50rem}
+.hero__subtitle{font-size:28rem}
+.hero__arr{height:55rem;width:17rem}
+.burger{width:40rem;height:20rem}
+.burger span:nth-child(2){top:9rem}
+.burger.active span:nth-child(1){-webkit-transform:rotate(45deg);transform:rotate(45deg);top:9rem}
+.burger.active span:nth-child(3){-webkit-transform:rotate(-45deg);transform:rotate(-45deg);bottom:9rem}
+.support__subtitle{font-size:28rem;line-height:34rem;margin-bottom:80rem}
+.clients__item{width:30%}
+.tilray img{min-width:156rem}
+.apple img{min-width:47rem}
+.bauerfeind img{min-width:156rem}
+.audi img{min-width:99rem}
+.subaru img{min-width:117rem}
+.bench img{min-width:123rem}
+.footer-container{padding-bottom:45rem;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;padding:80rem}
+.footer-box{width:50%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+.footer-box:nth-child(1){display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
+.footer-contact{font-size:18rem}
+.cont-form__input{font-size:18rem;padding:15rem;margin-bottom:20rem}
+.cont-form__check{width:33rem;height:33rem}
+.cont-form__submit{font-size:36px}
+textarea.cont-form__input{min-height:225rem}
+.cont-form label{font-size:14rem;max-width:100%;margin-left:15rem}
+.footer-contact__social,.footer__title{margin-bottom:0}
+.footer-nav{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}
+.footer-nav__item{margin-right:20rem;font-size:18rem}
+.footer-logo,.footer-nav{margin-bottom:0}
+.footer-logo__img{min-width:20px}
+.copyright-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;padding:40rem 80rem;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.copyright-box{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:100%;max-width:50%}
+}
+@media (min-width:1440px){
+html{font-size:.0692vw}
+.container{padding:80rem}
+.hero-box{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.hero__title{font-size:60rem;padding-right:250rem}
+.hero__subtitle{font-size:34rem;padding-right:170rem;margin:0}
+.hero__arr{height:60rem;width:20rem}
+.header-container{padding-top:45rem}
+.header-box{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:100%;max-width:50%}
+.burger,.menu.active{display:none}
+.lang{display:block}
+.menu{position:static;padding:0;width:auto;height:auto;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;background:0 0;font-size:18px;line-height:auto}
+.menu__item{margin-right:40rem}
+.menu__link{font-size:18rem}
+.lang{font-size:18rem}
+.support__subtitle{font-size:34rem;line-height:40rem}
+.support-container{padding-top:120rem;padding-bottom:120rem}
+.clients__item{width:auto}
+.tilray img{min-width:190rem}
+.apple img{min-width:58rem}
+.bauerfeind img{min-width:190rem}
+.audi img{min-width:120rem}
+.subaru img{min-width:140rem}
+.bench img{min-width:147rem}
+.input-box{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+textarea.cont-form__input{min-height:290rem}
+.cont-form__input:first-child{margin-right:10rem}
+.cont-form-box{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.cont-form label{max-width:70%}
+.copyright-container{padding-top:40rem;padding-bottom:40rem}
+}

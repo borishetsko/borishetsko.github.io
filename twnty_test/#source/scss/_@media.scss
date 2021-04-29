@@ -1,0 +1,317 @@
+
+@media (min-width: 768px) {
+
+      // ====================== MAIN STYLE ==========================
+        html {
+            font-size: 0.13vw; 
+        }
+
+        .container {
+            padding: 80rem;
+        }
+
+        .title {
+            font-size: 50rem;
+        }
+
+      // ======================== SECTION HERO ============================
+        .header-logo__img {
+            min-width: 107rem;
+        }
+        .menu.active {
+            font-size: 62rem;
+            line-height: 80rem;
+        }
+        .hero {
+            &__title {
+                font-size: 50rem;
+            }
+            &__subtitle {
+                font-size: 28rem;
+            }
+            &__arr {
+                height: 55rem;
+                width: 17rem;
+            }
+        }
+        .burger {
+            width: 40rem;
+            height: 20rem;
+        } 
+        .burger span:nth-child(2) {
+            top: 9rem;  
+        }
+        .burger.active span:nth-child(1) {
+            transform: rotate(45deg);
+            top: 9rem;
+        }
+        .burger.active span:nth-child(3) {
+            transform: rotate(-45deg);
+            bottom: 9rem;
+        }
+
+
+      // ====================== SECTION SUPPORT ==========================
+        .support__subtitle {
+            font-size: 28rem;
+            line-height: 34rem;
+            margin-bottom: 80rem;
+        }
+
+        .clients__item {
+            width: 30%;
+        }
+
+        .tilray img {
+            min-width: 156rem;
+        }
+        .apple img {
+            min-width: 47rem;
+        }
+        .bauerfeind img {
+            min-width: 156rem;
+        }
+        .audi img {
+            min-width: 99rem;
+        }
+        .subaru img {
+            min-width: 117rem;
+        }
+        .bench img {
+            min-width: 123rem;
+        }
+
+      // ====================== SECTION FOOTER ==========================
+        .footer-container {
+            padding-bottom: 45rem;
+            display: flex;
+            justify-content: space-between;
+            padding: 80rem;
+        }
+        .footer-box {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-box:nth-child(1) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .footer-contact {
+            font-size: 18rem;
+        }
+
+        .cont-form {
+            &__input {
+                font-size: 18rem;
+                padding: 15rem;
+                margin-bottom: 20rem;
+            }
+            &__check {
+                width: 33rem;
+                height: 33rem;
+            }
+            &__submit {
+                font-size: 36px;
+            }
+        }
+
+        textarea.cont-form__input {
+            min-height: 225rem;
+        }
+
+        .cont-form label {
+            font-size: 14rem;
+            max-width: 100%;
+            margin-left: 15rem;
+        }        
+
+        .footer__title,
+        .footer-contact__social {
+            margin-bottom: 0;
+        }
+
+        .footer-nav {
+            display: flex;
+            align-items: flex-start;
+            
+            &__item {
+                margin-right: 20rem;
+                font-size: 18rem;
+            }
+        }
+        .footer-logo,
+        .footer-nav {
+            margin-bottom: 0;
+        }
+
+        .footer-logo__img {
+            min-width: 20px;
+        }
+
+      // ====================== SECTION COPY ==========================
+        .copyright-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 40rem 80rem;
+            align-items: center;
+        }
+
+        .copyright-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 50%;
+        }
+}
+// ==========================================================================================================================================================================
+
+@media (min-width: 1440px) {
+
+
+      // ====================== MAIN ==========================
+        html {
+            font-size: 0.0692vw;
+        }
+
+        .container {
+            padding: 80rem;
+        }
+
+      // ====================== SECTION HERO ==========================
+        .hero-box {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hero__title {
+            font-size: 60rem;
+            padding-right: 250rem;
+        }
+
+        .hero__subtitle {
+            font-size: 34rem;
+            padding-right: 170rem;
+            margin: 0;
+        }
+
+        .hero__arr {
+            height: 60rem;
+            width: 20rem;
+        }
+
+        .header-container {
+            padding-top: 45rem;
+        }
+
+        .header-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 50%;
+        }
+    
+        .menu.active,
+        .burger {
+            display: none;
+        }
+
+        .lang {
+            display: block;
+        }
+
+        .menu {
+            position: static;
+            padding: 0;
+            width: auto;
+            height: auto;
+            flex-direction: row;
+            background: none;
+            font-size: 18px;
+            line-height: auto;
+
+            &__item {
+                margin-right: 40rem;
+            }
+            &__link {
+                font-size: 18rem;
+            }
+        }
+
+        .lang {
+            font-size: 18rem;
+        }
+
+      // ====================== SECTION SUPPORT ==========================
+
+        .support__subtitle {
+            font-size: 34rem;
+            line-height: 40rem;
+        }
+
+        .support-container {
+            padding-top: 120rem;
+            padding-bottom: 120rem;
+        }
+
+        .clients__item {
+            width: auto;
+        }
+
+        .tilray img {
+            min-width: 190rem;
+        }
+        .apple img {
+            min-width: 58rem;
+        }
+        .bauerfeind img {
+            min-width: 190rem;
+        }
+        .audi img {
+            min-width: 120rem;
+        }
+        .subaru img {
+            min-width: 140rem;
+        }
+        .bench img {
+            min-width: 147rem;
+        }
+
+      // ====================== SECTION FOOTER ==========================
+
+        .input-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        textarea.cont-form__input {
+            min-height: 290rem;
+        }
+
+        .cont-form__input:first-child {
+            margin-right: 10rem;
+        }
+
+        .cont-form-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .cont-form label {
+            max-width: 70%;
+        }
+
+        .copyright-container {
+            padding-top: 40rem;
+            padding-bottom: 40rem;
+        }
+}

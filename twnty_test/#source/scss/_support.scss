@@ -1,0 +1,46 @@
+.support {
+    background-color: $support-bg;
+    &__subtitle {
+        text-align: center;
+        margin: 20rem 0 30rem 0;
+        color: $dark-txt;
+    }
+}
+  
+.clients {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20rem;
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20rem;
+        width: 40%; 
+    }
+    &__img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.tilray img {
+    min-width: 120rem;
+}
+.apple img {
+    min-width: 39rem;
+}
+.bauerfeind img {
+    min-width: 120rem;
+}
+.audi img {
+    min-width: 77rem;
+}
+.subaru img {
+    min-width: 90rem;
+}
+.bench img {
+    min-width: 95rem;
+}
